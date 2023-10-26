@@ -44,7 +44,7 @@ const DATA_PRODUK = {
       description:
         "Tunjukkan gaya unik Anda dengan koleksi kaos grafis kami. Terbuat dari katun lembut dan tersedia dalam berbagai desain.",
       price: 19.99,
-      colors: ["Putih", "Hitam", "Abu-abu Muda"],
+      categories: "women",
       image_path: "../assets/images/graphic_tshirt.png",
     },
     {
@@ -52,7 +52,7 @@ const DATA_PRODUK = {
       description:
         "Tetap hangat dan modis dalam sweater rajut nyaman kami. Sempurna untuk hari-hari dingin, dengan potongan longgar dan pola rajut beragam.",
       price: 39.99,
-      colors: ["Burgundy", "Olive", "Abu-abu Tua"],
+      categories: "Kid",
       image_path: "../assets/images/cozy_knit_sweater.png",
     },
     {
@@ -60,7 +60,7 @@ const DATA_PRODUK = {
       description:
         "Capai tujuan kebugaran Anda dengan legging performa tinggi ini. Menyerap kelembapan dan nyaman untuk segala jenis latihan.",
       price: 29.99,
-      colors: ["Hitam", "Teal", "Ungu"],
+      categories: "Man",
       image_path: "../assets/images/athletic_leggings.png",
     },
     {
@@ -68,7 +68,7 @@ const DATA_PRODUK = {
       description:
         "Lengkapi tampilan musim panas Anda dengan topi pantai bernuansa vintage. Tepi lebar untuk perlindungan dari matahari dan aksen pita modis.",
       price: 24.99,
-      colors: ["Alami", "Navy", "Merah"],
+      categories: "Man",
       image_path: "../assets/images/vintage_sun_hat.png",
     },
     {
@@ -76,7 +76,7 @@ const DATA_PRODUK = {
       description:
         "Tampil tajam dengan kemeja jas pria terkini kami. Terbuat dari kain yang bernapas dan dirancang untuk kenyamanan sepanjang hari.",
       price: 49.99,
-      colors: ["Putih", "Biru Muda", "Abu-abu"],
+      categories: "Kid",
       image_path: "../assets/images/mens_dress_shirt.png",
     },
     {
@@ -84,7 +84,7 @@ const DATA_PRODUK = {
       description:
         "Sambut vibra boho-chic dengan gaun maxi aliran ini. Memiliki cetakan berwarna-warni, tali bahu yang dapat disesuaikan, dan potongan yang nyaman.",
       price: 54.99,
-      colors: ["Bunga", "Paisley", "Geometrik"],
+      categories: "women",
       image_path: "../assets/images/boho_maxi_dress.png",
     },
     {
@@ -92,7 +92,7 @@ const DATA_PRODUK = {
       description:
         "Jaga anak Anda tetap hangat dan lucu dengan onesie unicorn yang menggemaskan ini. Lembut dan berbulu, sempurna untuk bermain atau tidur.",
       price: 24.99,
-      colors: ["Merah Muda", "Biru", "Ungu"],
+      categories: "women",
       image_path: "../assets/images/kids_unicorn_onesie.png",
     },
     {
@@ -100,7 +100,7 @@ const DATA_PRODUK = {
       description:
         "Tetap hangat saat musim paling dingin dengan jaket puffer musim dingin kami. Diisi untuk kehangatan ekstra dan tersedia dengan penutup bulu sintetis.",
       price: 79.99,
-      colors: ["Hitam", "Navy", "Olive"],
+      categories: "Man",
       image_path: "../assets/images/winter_puffer_jacket.png",
     },
   ],
