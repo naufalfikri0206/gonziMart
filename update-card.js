@@ -17,7 +17,11 @@ for (let i = 0; i < updateButtons.length; i++) {
     console.log(satuUpdateButton.getAttribute("nama"));
     console.log(satuUpdateButton.getAttribute("tipe"));
     console.log(satuUpdateButton.getAttribute("nama"));
-    keranjangObj[satuUpdateButton.getAttribute("nama")  ]++;
+    if (satuUpdateButton.getAttribute("tipe") === "tambah") {
+      keranjangObj[satuUpdateButton.getAttribute("nama")]++;
+    } else if (satuUpdateButton.getAttribute("tipe") === "hapus") {
+      keranjangObj[satuUpdateButton.getAttribute("nama")]--;
+    }
     console.log(keranjangObj);
   });
 }
