@@ -87,31 +87,27 @@
         Best Sell Product
       </h3>
       <div class="flex justify-center w-full paddingX text-black gap-14">
-        <button
-          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2"
+        <button data-category="all"
+          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2 category-button"
         >
           All
         </button>
-        <button
-          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2"
+        <button data-category="men"
+          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2 category-button"
         >
-          Casual Shirt
+          Men
         </button>
-        <button
-          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2"
-        >
-          Formal Shirt
-        </button>
-        <button
-          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2"
-        >
-          Kids
-        </button>
-        <button
-          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2"
+        <button data-category="women"
+          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2 category-button"
         >
           Women
         </button>
+        <button data-category="kid"
+          class="border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2 category-button"
+        >
+          Kids
+        </button>
+        
       </div>
       <div class="grid gap-x-8 gap-y-4 grid-cols-4 product-gallery">
         <!-- di isi sama script.js bedasarkan data di products.json -->
@@ -217,5 +213,6 @@
     -->
 
     <script src="../script.js"></script>
+    <script src="../filter.js"></script>
   </body>
 </html>
