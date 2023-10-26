@@ -74,7 +74,7 @@ const DATA_PRODUK = {
       description:
         "Lengkapi tampilan musim panas Anda dengan topi pantai bernuansa vintage. Tepi lebar untuk perlindungan dari matahari dan aksen pita modis.",
       price: 24.99,
-      categories: "Man",
+      categories: "women",
       image_path: "../assets/images/vintage_sun_hat.png",
     },
     {
