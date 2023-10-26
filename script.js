@@ -12,9 +12,8 @@ function bikinSatuKartu(satuKartuObj) {
   const kartu = document.createElement("card");
   kartu.className = "flex flex-col text-center";
   kartu.innerHTML = `
-                <img src="${satuKartuObj.image_path}"/>
-                <p class="text-2xl">${satuKartuObj.name}</p>
-                <p>${satuKartuObj.description}</p>
+                <img src="${satuKartuObj.image_path}" class="rounded-lg"/>
+                <p class="text-2xl font-semibold">${satuKartuObj.name}</p>
                 <p>Price: $${satuKartuObj.price}</p>
             `;
   return kartu;
@@ -33,6 +32,8 @@ fetch("../products.json")
       gallery.appendChild(satuKartu);
     }
   });
+
+// <p>${satuKartuObj.description}</p>
 
 /*
 ####################
