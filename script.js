@@ -27,7 +27,7 @@ const DATA_PRODUK = {
       name: "Classic Denim Jacket",
       description: "Jaket denim abadi yang sempurna untuk segala musim. Terbuat dari denim berkualitas tinggi dengan kenyamanan maksimal.",
       price: 59.99,
-      colors: ["Biru", "Hitam", "Abu-abu"],
+      categories: "women",
       image_path: "../assets/images/classic_denim_jacket.png",
     },
     {
@@ -35,7 +35,7 @@ const DATA_PRODUK = {
       name: "Gaun Malam Elegan",
       description: "Buat pernyataan pada acara formal berikutnya dengan gaun malam elegan ini. Memiliki siluet yang mempesona dan detail manik-manik yang rumit.",
       price: 149.99,
-      colors: ["Merah", "Navy", "Hitam"],
+      categories: "women",
       image_path: "../assets/images/elegant_evening_gown.png",
     },
     {
