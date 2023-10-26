@@ -1,0 +1,13 @@
+/* 
+SEPERATION ON CONCERNS
+
+biar filter ga ubah style, style di sini / modal jg
+*/
+
+.hide {
+  display: none;
+}
+
+.block {
+  display: block;
+}
