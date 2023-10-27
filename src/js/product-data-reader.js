@@ -8,6 +8,7 @@
  * # PRODUK DATA #
  * ###############
  */
+
 const DATA_PRODUK = [
   {
     name: "Classic",
@@ -113,14 +114,15 @@ function bikinSatuKartu(satuKartuObj) {
 
   // bangun isinya
   KARTU.innerHTML = `
-                <img src="${satuKartuObj.image_path}" class="rounded-lg"/>
-                <p class="text-2xl font-semibold">${satuKartuObj.name}</p>
-                <p>${satuKartuObj.description}</p>
-                <p>Harga: $${satuKartuObj.price}</p>
-                <div class="flex flex-col justify-start gap-1 item-center" style="margin-top: auto">
-                <button type="add" name=${satuKartuObj.name} class="btn-cart btn-tambah border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2">Tambah</button>
-                <button type="del" name=${satuKartuObj.name} class="btn-cart btn-tambah border-2 border-black hover:bg-black hover:text-white rounded-xl px-8 py-2">Kurang</button>
-                </div>
+  <div class="rounded-xl overflow-hidden shadow-xl p-4">
+  <img src="${satuKartuObj.image_path}" class="rounded-lg"/>
+  <p class="text-2xl font-light pt-2">${satuKartuObj.name}</p>
+  <p class="font-semibold">Harga: $${satuKartuObj.price}</p>
+  <div class="flex justify-center gap-2 item-center" style="margin-top: auto">
+    <button type="add" name=${satuKartuObj.name} class="btn-cart btn-tambah bg-black text-white hover:rounded-lg rounded-xl px-12 py-2"> Add to chart <i class="bi bi-cart4"></i></button>
+    <button type="del" name=${satuKartuObj.name} class="btn-cart btn-tambah border-2 border-black hover:bg-black hover:text-white rounded-xl px-4 py-2"> - </button>
+  </div>
+</div>
                 `;
 
   // udh jdi, balikin

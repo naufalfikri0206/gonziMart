@@ -14,6 +14,7 @@ let keranjangObj = {};
 // iter DATA_PRODUK, isi keranjangObj dngn produk di data (val ny 0 awalnya)
 DATA_PRODUK.forEach((satuObjekProduk) => {
   keranjangObj[satuObjekProduk.name] = 0;
+  keranjangObj[satuObjekProduk.image_path];
 });
 
 // iter UPDATE_BUTTONS, tempelin signal ke callback
@@ -51,7 +52,14 @@ function updateModalBody() {
 
     // Create a div element to display the product and its quantity
     const PRODUCT_DIV = document.createElement("div");
-    PRODUCT_DIV.innerHTML = `<p>${productName}: ${QUANTITY}</p>`;
+    PRODUCT_DIV.innerHTML = `
+    <div class="flex flex-col">
+    <p class="text-black text-start text-2xl">Item : <span class="underline">${productName}</span></p>
+    <p class=""> Quantity : <span class="font-bold">${QUANTITY}</span></p>
+    </div>
+    
+    
+    `;
 
     // Append the productDiv to MODAL_BODY
     MODAL_BODY.appendChild(PRODUCT_DIV);
@@ -60,3 +68,5 @@ function updateModalBody() {
 
 // Call the function to initially populate MODAL_BODY
 updateModalBody();
+
+// export default { keranjangObj };
